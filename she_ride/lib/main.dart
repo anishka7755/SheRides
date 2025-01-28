@@ -15,8 +15,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        useMaterial3: true,
         textTheme: GoogleFonts.poppinsTextTheme(textTheme),
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 150, 58, 183)),
       ),
       home: const LoginScreen(),
     );
